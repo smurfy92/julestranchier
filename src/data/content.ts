@@ -91,45 +91,61 @@ export const skillCategories: SkillCategory[] = [
 
 export const experiences: Experience[] = [
   {
-    company: "Naboo",
-    role: "Developpeur Full-Stack Senior",
-    period: "2023 - Present",
+    company: "Digital Pharma Lab",
+    role: "Software Engineer",
+    period: "Sept 2025 - Present",
     description:
-      "Developpement de fonctionnalites full-stack sur la plateforme Naboo. Travail en equipe agile avec une vision produit de bout en bout.",
-    tech: ["React", "Node.js", "TypeScript", "GraphQL"],
+      "Construction d'agents IA pour automatiser la prospection et les comptes rendus via OpenClaw, une passerelle IA sur WhatsApp. Orchestration de chaque etape, de la prise de contact a la synthese post-reunion, connectee aux outils metier (CRM, emailing, messagerie).",
+    tech: ["IA", "WhatsApp API", "Node.js", "CRM"],
     current: true,
   },
   {
-    company: "Freelance",
-    role: "Developpeur Full-Stack & Consultant",
-    period: "2020 - 2023",
+    company: "Naboo",
+    role: "Full-stack Developer",
+    period: "Fev 2025 - Sept 2025",
     description:
-      "Accompagnement de startups et entreprises dans la conception et le developpement d'applications web et mobiles. Conseil technique et strategique.",
-    tech: ["React", "Next.js", "Node.js", "React Native", "GraphQL"],
+      "Refactoring complet du moteur de calcul d'empreinte carbone. Developpement de dashboards analytiques, d'un systeme de login white-label personnalisable et d'une interface admin multi-tenant 'Control Tower'.",
+    tech: ["NestJS", "Next.js", "MongoDB", "GraphQL", "AWS"],
   },
   {
-    company: "Adelit",
-    role: "Board Member & Developpeur",
-    period: "2019 - 2022",
+    company: "Coinhouse",
+    role: "Software Engineer",
+    period: "Mars 2022 - Nov 2023",
     description:
-      "Membre du conseil d'administration. Contribution strategique et technique sur des projets e-commerce et d'innovation digitale.",
-    tech: ["React", "Node.js", "E-commerce"],
+      "Refactoring a grande echelle de l'architecture front-end : migration vers des composants fonctionnels, suppression des patterns legacy, introduction de styled-components. Refonte du onboarding B2B et des exports financiers.",
+    tech: ["React", "React Native", "TypeScript", "GraphQL", "GitHub Actions"],
   },
   {
-    company: "Digital Pharma Lab",
-    role: "Developpeur Full-Stack",
-    period: "2018 - 2019",
+    company: "Ecoly(.earth)",
+    role: "Founder",
+    period: "Nov 2020 - Fev 2022",
     description:
-      "Developpement d'outils digitaux pour l'industrie pharmaceutique au sein du premier accelerateur Pharmatech en Europe.",
-    tech: ["JavaScript", "PHP", "APIs"],
+      "Creation d'une startup climat engageant les salaries via des defis ecologiques. Conception de l'architecture backend, developpement de l'app mobile, deploiement et maintenance de l'infrastructure AWS.",
+    tech: ["Node.js", "React Native", "Redux", "AWS"],
   },
   {
-    company: "Ecole 42",
-    role: "Formation Developpeur",
-    period: "2015 - 2018",
+    company: "Fleetizen",
+    role: "Full Stack Developer",
+    period: "Aout 2019 - Oct 2020",
     description:
-      "Formation intensive en informatique. Diplome senior (Level 21). Apprentissage par projets en C, algorithmique, reseaux et developpement web.",
-    tech: ["C", "Algorithmique", "Unix", "Web"],
+      "Amelioration des performances et de la fiabilite du systeme de dispatch taxi. Implementation d'un service de distribution de notifications configurable. Maintenance des applications web et mobile.",
+    tech: ["Node.js", "React", "React Native"],
+  },
+  {
+    company: "Dirox",
+    role: "Full Stack Developer",
+    period: "Avr 2017 - Dec 2017",
+    description:
+      "Developpement d'une plateforme en ligne avec systeme de monnaie et de vouchers pour une entreprise nationale au Vietnam. Construction de parsers API pour l'integration de donnees publicitaires.",
+    tech: ["React", "Node.js", "Git"],
+  },
+  {
+    company: "3WAgency",
+    role: "Full Stack Developer Freelance",
+    period: "Jan 2013 - Dec 2015",
+    description:
+      "Developpement front-end et back-end pour plusieurs clients (Adelit, DAAC Partners, Boostons Votre Startup). Migration CMS WordPress, interfaces responsives et structures de contenu scalables.",
+    tech: ["Symfony", "jQuery", "WordPress", "Git"],
   },
 ];
 
@@ -194,7 +210,7 @@ export const contactLinks: ContactLink[] = [
   },
   {
     label: "Email",
-    url: "mailto:contact@julestranchier.com",
+    url: "mailto:tranchierjules@gmail.com",
     icon: "email",
   },
 ];
