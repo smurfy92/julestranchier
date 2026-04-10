@@ -14,13 +14,13 @@ export function Contact() {
     <SectionWrapper id="contact" alternate>
       <SectionHeading
         title="Contact"
-        subtitle="Un projet en t\u00EAte ? Discutons-en."
+        subtitle="Un projet en tête ? Discutons-en."
       />
 
       <div className="mx-auto max-w-xl text-center">
         <p className="text-lg leading-relaxed text-muted-foreground">
           Je suis disponible pour des missions freelance, du conseil technique
-          ou des collaborations sur des projets innovants. N&apos;h\u00E9sitez pas \u00E0 me
+          ou des collaborations sur des projets innovants. N&apos;hésitez pas à me
           contacter.
         </p>
 

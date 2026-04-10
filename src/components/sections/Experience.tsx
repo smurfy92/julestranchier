@@ -8,8 +8,8 @@ export function Experience() {
   return (
     <SectionWrapper id="experience">
       <SectionHeading
-        title="Exp\u00E9riences"
-        subtitle="Mon parcours professionnel en France et \u00E0 l'international."
+        title="Expériences"
+        subtitle="Mon parcours professionnel en France et à l'international."
       />
 
       <div className="relative">

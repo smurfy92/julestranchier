@@ -8,8 +8,8 @@ export function About() {
   return (
     <SectionWrapper id="about">
       <SectionHeading
-        title="\u00C0 propos"
-        subtitle="D\u00E9veloppeur Full-Stack passionn\u00E9 avec un parcours international unique."
+        title="À propos"
+        subtitle="Développeur Full-Stack passionné avec un parcours international unique."
       />
 
       <div className="grid gap-12 md:grid-cols-2">

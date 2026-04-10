@@ -16,11 +16,11 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Jules Tranchier | AI-augmented Full-Stack Engineer",
   description:
-    "D\u00E9veloppeur Full-Stack freelance bas\u00E9 \u00E0 Paris. +7 ans d'exp\u00E9rience en React, Node.js, GraphQL, TypeScript. Dipl\u00F4m\u00E9 de l'\u00C9cole 42.",
+    "Développeur Full-Stack freelance basé à Paris. +7 ans d'expérience en React, Node.js, GraphQL, TypeScript. Diplômé de l'École 42.",
   openGraph: {
     title: "Jules Tranchier | AI-augmented Full-Stack Engineer",
     description:
-      "D\u00E9veloppeur Full-Stack freelance bas\u00E9 \u00E0 Paris. +7 ans d'exp\u00E9rience en React, Node.js, GraphQL, TypeScript.",
+      "Développeur Full-Stack freelance basé à Paris. +7 ans d'expérience en React, Node.js, GraphQL, TypeScript.",
     locale: "fr_FR",
     type: "website",
   },
