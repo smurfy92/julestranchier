@@ -21,7 +21,7 @@ export function Skills() {
   return (
     <SectionWrapper id="skills" alternate>
       <SectionHeading
-        title="Competences"
+        title="Comp\u00E9tences"
         subtitle="Les technologies et outils que j'utilise au quotidien."
       />
 

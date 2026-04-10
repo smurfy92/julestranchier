@@ -10,7 +10,7 @@ export function Projects() {
     <SectionWrapper id="projects" alternate>
       <SectionHeading
         title="Projets"
-        subtitle="Une selection de projets sur lesquels j'ai travaille."
+        subtitle="Une s\u00E9lection de projets sur lesquels j'ai travaill\u00E9."
       />
 
       <div className="grid gap-6 md:grid-cols-2">

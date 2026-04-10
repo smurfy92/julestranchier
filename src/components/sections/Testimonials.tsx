@@ -8,7 +8,7 @@ export function Testimonials() {
   return (
     <SectionWrapper id="testimonials">
       <SectionHeading
-        title="Temoignages"
+        title="T\u00E9moignages"
         subtitle="Ce que disent mes collaborateurs."
       />
 

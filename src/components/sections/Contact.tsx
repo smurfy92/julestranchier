@@ -14,19 +14,19 @@ export function Contact() {
     <SectionWrapper id="contact" alternate>
       <SectionHeading
         title="Contact"
-        subtitle="Un projet en tete ? Discutons-en."
+        subtitle="Un projet en t\u00EAte ? Discutons-en."
       />
 
       <div className="mx-auto max-w-xl text-center">
         <p className="text-lg leading-relaxed text-muted-foreground">
           Je suis disponible pour des missions freelance, du conseil technique
-          ou des collaborations sur des projets innovants. N&apos;hesitez pas a me
+          ou des collaborations sur des projets innovants. N&apos;h\u00E9sitez pas \u00E0 me
           contacter.
         </p>
 
         <div className="mt-8">
           <Button
-            href="mailto:contact@julestranchier.com"
+            href="mailto:tranchierjules@gmail.com"
             size="lg"
           >
             <EnvelopeIcon className="mr-2 h-5 w-5" />
