@@ -12,11 +12,11 @@ export function Testimonials() {
         subtitle="Ce que disent mes collaborateurs."
       />
 
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="columns-1 gap-6 space-y-6 md:columns-2 lg:columns-3">
         {testimonials.map((testimonial) => (
           <div
             key={testimonial.author}
-            className="rounded-2xl border border-border bg-card p-8"
+            className="break-inside-avoid rounded-2xl border border-border bg-card p-8"
           >
             <svg
               className="mb-4 h-8 w-8 text-accent/30"

@@ -190,17 +190,38 @@ export const projects: Project[] = [
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "Jules a fait preuve d'un grand professionnalisme et d'une polyvalence remarquable en tant que développeur full-stack sur nos projets web et mobile.",
-    author: "Thomas Czerwonka",
-    role: "Collaborateur",
-    company: "Projet collaboratif",
+      "En tant que mère je suis sûrement moins objective… mais aussi en tant que professionnelle, je peux dire que Jules est un vrai builder. Jules a un fort esprit produit, capable de transformer rapidement une idée en solution concrète. Curieux, autonome et très orienté impact, il aborde les projets avec l'état d'esprit d'un entrepreneur. Le voir construire, apprendre et progresser est une immense fierté.",
+    author: "Catherine Prin",
+    role: "Leadership RH & Finance",
+    company: "Manager directe",
   },
   {
     quote:
-      "Un développeur talentueux avec une vraie vision produit. Jules comprend les enjeux business autant que les défis techniques.",
+      "Jules est un développeur de talent qui se réinvente à toute vitesse avec professionnalisme avec l'IA. Il a beaucoup de facilités, couplées à une grande qualité pédagogique et une très bonne compréhension des besoins de ses clients. Un excellent professionnel avec lequel il est agréable de travailler.",
+    author: "Pascal Bécache",
+    role: "Co-Founder",
+    company: "Digital Pharma Lab",
+  },
+  {
+    quote:
+      "Jules a fait preuve d'un grand professionnalisme, et sa versatilité en tant que développeur fullstack nous a permis de compter sur lui pour le développement de nombreux projets, tant web que mobile. Si vous êtes à la recherche d'un développeur confirmé aux multiples talents, Jules est sans doute la personne qu'il vous faut.",
+    author: "Thomas Czerwonka",
+    role: "Head of Engineering",
+    company: "Manager direct",
+  },
+  {
+    quote:
+      "His solid knowledge of web development in general, from back to front, allowed him to join one of our major projects and to contribute at the same level of quality we expect from all our engineers.",
     author: "Benjamin Chery",
-    role: "Collaborateur",
-    company: "Projet collaboratif",
+    role: "Cyber Security Specialist",
+    company: "Manager direct",
+  },
+  {
+    quote:
+      "Jules est un garçon brillant qui maîtrise maintenant le développement web, il apporte une touche de jeunesse et de bonne humeur qui complète son approche professionnelle du métier.",
+    author: "Djamchid Dalili",
+    role: "Fondateur",
+    company: "DiamPark",
   },
 ];
 
