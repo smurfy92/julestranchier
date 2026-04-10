@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { experiences } from "@/data/content";
@@ -39,9 +40,20 @@ export function Experience() {
               <div className="ml-12 md:ml-0 md:w-1/2 md:px-8">
                 <div className="rounded-2xl border border-border bg-card p-6">
                   <div className="flex items-center justify-between gap-4">
-                    <h3 className="font-heading text-lg font-semibold text-card-foreground">
-                      {exp.company}
-                    </h3>
+                    <div className="flex items-center gap-3">
+                      {exp.logo && (
+                        <Image
+                          src={exp.logo}
+                          alt={`${exp.company} logo`}
+                          width={32}
+                          height={32}
+                          className="rounded-md object-contain"
+                        />
+                      )}
+                      <h3 className="font-heading text-lg font-semibold text-card-foreground">
+                        {exp.company}
+                      </h3>
+                    </div>
                     {exp.current && (
                       <span className="rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
                         Actuel

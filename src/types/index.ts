@@ -38,6 +38,7 @@ export interface Experience {
   description: string;
   tech: string[];
   current?: boolean;
+  logo?: string;
 }
 
 export interface Project {

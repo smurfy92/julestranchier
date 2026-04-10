@@ -97,6 +97,7 @@ export const experiences: Experience[] = [
     description:
       "Construction d'agents IA pour automatiser la prospection et les comptes rendus via OpenClaw, une passerelle IA sur WhatsApp. Orchestration de chaque étape, de la prise de contact à la synthèse post-réunion, connectée aux outils métier (CRM, emailing, messagerie).",
     tech: ["IA", "WhatsApp API", "Node.js", "CRM"],
+    logo: "/images/companies/digitalpharmalab.png",
     current: true,
   },
   {
@@ -106,6 +107,7 @@ export const experiences: Experience[] = [
     description:
       "Refactoring complet du moteur de calcul d'empreinte carbone. Développement de dashboards analytiques, d'un système de login white-label personnalisable et d'une interface admin multi-tenant « Control Tower ».",
     tech: ["NestJS", "Next.js", "MongoDB", "GraphQL", "AWS"],
+    logo: "/images/companies/naboo.png",
   },
   {
     company: "Coinhouse",
@@ -114,6 +116,7 @@ export const experiences: Experience[] = [
     description:
       "Refactoring à grande échelle de l'architecture front-end : migration vers des composants fonctionnels, suppression des patterns legacy, introduction de styled-components. Refonte du onboarding B2B et des exports financiers.",
     tech: ["React", "React Native", "TypeScript", "GraphQL", "GitHub Actions"],
+    logo: "/images/companies/coinhouse.svg",
   },
   {
     company: "Ecoly(.earth)",
@@ -122,6 +125,7 @@ export const experiences: Experience[] = [
     description:
       "Création d'une startup climat engageant les salariés via des défis écologiques. Conception de l'architecture backend, développement de l'app mobile, déploiement et maintenance de l'infrastructure AWS.",
     tech: ["Node.js", "React Native", "Redux", "AWS"],
+    logo: "/images/companies/ecoly.png",
   },
   {
     company: "Fleetizen",
@@ -130,6 +134,7 @@ export const experiences: Experience[] = [
     description:
       "Amélioration des performances et de la fiabilité du système de dispatch taxi. Implémentation d'un service de distribution de notifications configurable. Maintenance des applications web et mobile.",
     tech: ["Node.js", "React", "React Native"],
+    logo: "/images/companies/fleetizen.png",
   },
   {
     company: "Dirox",
@@ -138,6 +143,7 @@ export const experiences: Experience[] = [
     description:
       "Développement d'une plateforme en ligne avec système de monnaie et de vouchers pour une entreprise nationale au Vietnam. Construction de parsers API pour l'intégration de données publicitaires.",
     tech: ["React", "Node.js", "Git"],
+    logo: "/images/companies/dirox.png",
   },
   {
     company: "3WAgency",
@@ -146,6 +152,7 @@ export const experiences: Experience[] = [
     description:
       "Développement front-end et back-end pour plusieurs clients (Adelit, DAAC Partners, Boostons Votre Startup). Migration CMS WordPress, interfaces responsives et structures de contenu scalables.",
     tech: ["Symfony", "jQuery", "WordPress", "Git"],
+    logo: "/images/companies/3wagency.png",
   },
 ];
 
