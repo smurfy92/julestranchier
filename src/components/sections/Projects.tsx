@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { projects } from "@/data/content";
@@ -19,12 +20,22 @@ export function Projects() {
             key={project.title}
             className="group rounded-2xl border border-border bg-card p-6 transition-all hover:shadow-lg"
           >
-            {/* Placeholder image area */}
-            <div className="mb-4 flex h-40 items-center justify-center rounded-xl bg-muted">
-              <span className="text-4xl font-bold text-muted-foreground/20">
-                {project.title.charAt(0)}
-              </span>
-            </div>
+            {project.image ? (
+              <div className="relative mb-4 h-48 overflow-hidden rounded-xl">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+            ) : (
+              <div className="mb-4 flex h-48 items-center justify-center rounded-xl bg-muted">
+                <span className="text-4xl font-bold text-muted-foreground/20">
+                  {project.title.charAt(0)}
+                </span>
+              </div>
+            )}
 
             <h3 className="font-heading text-xl font-semibold text-card-foreground">
               {project.title}

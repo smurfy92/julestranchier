@@ -162,28 +162,28 @@ export const projects: Project[] = [
     description:
       "Conception et développement d'une plateforme SaaS complète avec authentification, tableau de bord et API REST.",
     tech: ["Next.js", "TypeScript", "Node.js", "PostgreSQL"],
-    image: "/images/projects/saas.jpg",
+    image: "/images/projects/saas.svg",
   },
   {
     title: "Application Mobile",
     description:
       "Application mobile cross-platform pour la gestion d'événements avec géolocalisation et notifications push.",
     tech: ["React Native", "GraphQL", "Node.js"],
-    image: "/images/projects/mobile.jpg",
+    image: "/images/projects/mobile.svg",
   },
   {
     title: "E-commerce",
     description:
       "Boutique en ligne performante avec gestion de catalogue, panier et paiement intégré.",
     tech: ["React", "Node.js", "Stripe", "MongoDB"],
-    image: "/images/projects/ecommerce.jpg",
+    image: "/images/projects/ecommerce.svg",
   },
   {
     title: "Dashboard Analytics",
     description:
       "Tableau de bord interactif pour la visualisation de données en temps réel avec graphiques dynamiques.",
     tech: ["React", "D3.js", "TypeScript", "REST API"],
-    image: "/images/projects/dashboard.jpg",
+    image: "/images/projects/dashboard.svg",
   },
 ];
 
