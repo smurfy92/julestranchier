@@ -116,7 +116,7 @@ export const experiences: Experience[] = [
     description:
       "Refactoring à grande échelle de l'architecture front-end : migration vers des composants fonctionnels, suppression des patterns legacy, introduction de styled-components. Refonte du onboarding B2B et des exports financiers.",
     tech: ["React", "React Native", "TypeScript", "GraphQL", "GitHub Actions"],
-    logo: "/images/companies/coinhouse.svg",
+    logo: "/images/companies/coinhouse.png",
   },
   {
     company: "Ecoly(.earth)",
