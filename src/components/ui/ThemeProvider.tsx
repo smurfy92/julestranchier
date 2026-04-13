@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useSyncExternalStore } from "react";
 
 type Theme = "light" | "dark";
 
@@ -16,34 +16,48 @@ export function useTheme() {
   return useContext(ThemeContext);
 }
 
+let currentTheme: Theme = "light";
+const listeners = new Set<() => void>();
+
+function getSnapshot(): Theme {
+  return currentTheme;
+}
+
+function getServerSnapshot(): Theme {
+  return "light";
+}
+
+function subscribe(callback: () => void) {
+  listeners.add(callback);
+  return () => listeners.delete(callback);
+}
+
+function setTheme(next: Theme) {
+  currentTheme = next;
+  listeners.forEach((l) => l());
+}
+
+// Initialize from localStorage on module load (client only)
+if (typeof window !== "undefined") {
+  const stored = localStorage.getItem("theme") as Theme | null;
+  if (stored) {
+    currentTheme = stored;
+  } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    currentTheme = "dark";
+  }
+}
+
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>("light");
-  const [mounted, setMounted] = useState(false);
+  const theme = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 
   useEffect(() => {
-    setMounted(true);
-    const stored = localStorage.getItem("theme") as Theme | null;
-    if (stored) {
-      setTheme(stored);
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-    }
-  }, []);
-
-  useEffect(() => {
-    if (mounted) {
-      document.documentElement.classList.toggle("dark", theme === "dark");
-      localStorage.setItem("theme", theme);
-    }
-  }, [theme, mounted]);
+    document.documentElement.classList.toggle("dark", theme === "dark");
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+    setTheme(theme === "light" ? "dark" : "light");
   };
-
-  if (!mounted) {
-    return <>{children}</>;
-  }
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
