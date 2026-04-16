@@ -241,4 +241,9 @@ export const contactLinks: ContactLink[] = [
     url: "mailto:tranchierjules@gmail.com",
     icon: "email",
   },
+  {
+    label: "Calendly",
+    url: "https://calendly.com/tranchierjules/30min",
+    icon: "calendar",
+  },
 ];

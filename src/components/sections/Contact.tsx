@@ -6,6 +6,7 @@ import { contactLinks } from "@/data/content";
 import { Button } from "@/components/ui/Button";
 import {
   EnvelopeIcon,
+  CalendarDaysIcon,
   ArrowTopRightOnSquareIcon,
 } from "@heroicons/react/24/outline";
 
@@ -24,13 +25,21 @@ export function Contact() {
           contacter.
         </p>
 
-        <div className="mt-8">
+        <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Button
             href="mailto:tranchierjules@gmail.com"
             size="lg"
           >
             <EnvelopeIcon className="mr-2 h-5 w-5" />
             Envoyer un email
+          </Button>
+          <Button
+            href="https://calendly.com/tranchierjules/30min"
+            variant="secondary"
+            size="lg"
+          >
+            <CalendarDaysIcon className="mr-2 h-5 w-5" />
+            Réserver un appel
           </Button>
         </div>
 

@@ -1,3 +1,4 @@
+import { TopBanner } from "@/components/layout/TopBanner";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
@@ -11,6 +12,7 @@ import { Contact } from "@/components/sections/Contact";
 export default function Home() {
   return (
     <>
+      <TopBanner />
       <Navbar />
       <main>
         <Hero />
