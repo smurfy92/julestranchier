@@ -86,6 +86,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "CI/CD" },
       { name: "Linux" },
       { name: "AWS" },
+      { name: "TDD" },
+      { name: "Tests unitaires" },
     ],
   },
 ];
@@ -97,7 +99,7 @@ export const experiences: Experience[] = [
     period: "Sept 2025 - Present",
     description:
       "Construction d'agents IA pour automatiser la prospection et les comptes rendus via OpenClaw, une passerelle IA sur WhatsApp. Orchestration de chaque étape, de la prise de contact à la synthèse post-réunion, connectée aux outils métier (CRM, emailing, messagerie).",
-    tech: ["IA", "WhatsApp API", "Node.js", "CRM"],
+    tech: ["IA", "WhatsApp API", "Node.js", "CRM", "Tests unitaires"],
     logo: "/images/companies/digitalpharmalab.png",
     current: true,
   },
@@ -107,7 +109,7 @@ export const experiences: Experience[] = [
     period: "Fév 2025 - Sept 2025",
     description:
       "Refactoring complet du moteur de calcul d'empreinte carbone. Développement de dashboards analytiques, d'un système de login white-label personnalisable et d'une interface admin multi-tenant « Control Tower ».",
-    tech: ["NestJS", "Next.js", "MongoDB", "GraphQL", "AWS"],
+    tech: ["NestJS", "Next.js", "MongoDB", "GraphQL", "AWS", "Tests unitaires"],
     logo: "/images/companies/naboo.png",
   },
   {
@@ -116,7 +118,7 @@ export const experiences: Experience[] = [
     period: "Mars 2022 - Nov 2023",
     description:
       "Refactoring à grande échelle de l'architecture front-end : migration vers des composants fonctionnels, suppression des patterns legacy, introduction de styled-components. Refonte du onboarding B2B et des exports financiers.",
-    tech: ["React", "React Native", "TypeScript", "GraphQL", "GitHub Actions"],
+    tech: ["React", "React Native", "TypeScript", "GraphQL", "GitHub Actions", "Tests unitaires"],
     logo: "/images/companies/coinhouse.png",
   },
   {
@@ -125,7 +127,7 @@ export const experiences: Experience[] = [
     period: "Nov 2020 - Fév 2022",
     description:
       "Création d'une startup climat engageant les salariés via des défis écologiques. Conception de l'architecture backend, développement de l'app mobile, déploiement et maintenance de l'infrastructure AWS.",
-    tech: ["Node.js", "React Native", "Redux", "AWS"],
+    tech: ["Node.js", "React Native", "Redux", "AWS", "Tests unitaires"],
     logo: "/images/companies/ecoly.png",
   },
   {
@@ -134,7 +136,7 @@ export const experiences: Experience[] = [
     period: "Août 2019 - Oct 2020",
     description:
       "Amélioration des performances et de la fiabilité du système de dispatch taxi. Implémentation d'un service de distribution de notifications configurable. Maintenance des applications web et mobile.",
-    tech: ["Node.js", "React", "React Native"],
+    tech: ["Node.js", "React", "React Native", "TDD", "Tests unitaires"],
     logo: "/images/companies/fleetizen.png",
   },
   {
@@ -143,7 +145,7 @@ export const experiences: Experience[] = [
     period: "Avr 2017 - Déc 2017",
     description:
       "Développement d'une plateforme en ligne avec système de monnaie et de vouchers pour une entreprise nationale au Vietnam. Construction de parsers API pour l'intégration de données publicitaires.",
-    tech: ["React", "Node.js", "Git"],
+    tech: ["React", "Node.js", "Git", "Tests unitaires"],
     logo: "/images/companies/dirox.png",
   },
   {
@@ -152,7 +154,7 @@ export const experiences: Experience[] = [
     period: "Jan 2013 - Déc 2015",
     description:
       "Développement front-end et back-end pour plusieurs clients (Adelit, DAAC Partners, Boostons Votre Startup). Migration CMS WordPress, interfaces responsives et structures de contenu scalables.",
-    tech: ["Symfony", "jQuery", "WordPress", "Git"],
+    tech: ["Symfony", "jQuery", "WordPress", "Git", "Tests unitaires"],
     logo: "/images/companies/3wagency.png",
   },
 ];
