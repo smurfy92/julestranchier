@@ -53,3 +53,60 @@ body {
   background-color: var(--accent);
   color: white;
 }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 10.5pt;
+    line-height: 1.35;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Force light palette on the CV page even if user is in dark mode */
+  .cv-page {
+    --background: #ffffff;
+    --foreground: #0f172a;
+    --muted: #f8fafc;
+    --muted-foreground: #475569;
+    --border: #cbd5e1;
+    --card: #ffffff;
+    --card-foreground: #0f172a;
+  }
+
+  .cv-page {
+    padding: 0 !important;
+    max-width: none !important;
+  }
+
+  /* Force two-column layout regardless of viewport breakpoints */
+  .cv-grid {
+    display: grid !important;
+    grid-template-columns: 1.7fr 1fr !important;
+    gap: 1.25rem !important;
+    align-items: start;
+  }
+
+  .cv-experience-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .cv-page aside section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Keep links readable in print without color loss */
+  .cv-page a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

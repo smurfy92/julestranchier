@@ -62,3 +62,29 @@ export interface ContactLink {
   url: string;
   icon: string;
 }
+
+export interface Language {
+  name: string;
+  level: string;
+}
+
+export interface ExtraRole {
+  label: string;
+  company: string;
+}
+
+export interface CVData {
+  pitch: string;
+  location: string;
+  yearsOfExperience: number;
+  website: string;
+  phone?: string;
+  education: {
+    school: string;
+    level: string;
+    detail: string;
+  };
+  languages: Language[];
+  extras: ExtraRole[];
+  highlights: string[];
+}

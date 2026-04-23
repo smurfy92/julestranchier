@@ -71,6 +71,20 @@ export function Hero() {
             {hero.ctaSecondary.label}
           </Button>
         </motion.div>
+
+        <motion.div
+          className="mt-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.55 }}
+        >
+          <a
+            href="/cv"
+            className="text-sm text-muted-foreground underline-offset-4 transition hover:text-accent hover:underline"
+          >
+            Voir mon CV →
+          </a>
+        </motion.div>
       </div>
 
       {/* Scroll indicator */}

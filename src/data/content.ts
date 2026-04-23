@@ -7,6 +7,7 @@ import type {
   Project,
   Testimonial,
   ContactLink,
+  CVData,
 } from "@/types";
 
 export const navigation: NavItem[] = [
@@ -224,6 +225,33 @@ export const testimonials: Testimonial[] = [
     company: "DiamPark",
   },
 ];
+
+export const cv: CVData = {
+  pitch:
+    "Ingénieur full-stack augmenté par l'IA, 7+ ans d'expérience de la prise d'initiative produit au déploiement en production. Diplômé de l'École 42 (Level 21), je conçois des applications web et mobile à fort impact, de la refonte d'architecture aux agents IA connectés aux outils métier.",
+  location: "Paris, France",
+  yearsOfExperience: 7,
+  website: "julestranchier.com",
+  education: {
+    school: "École 42",
+    level: "Level 21 · Diplôme senior",
+    detail:
+      "Cursus par projets sans cours ni professeurs, axé peer-learning, C/Unix, algorithmique, systèmes et réseaux.",
+  },
+  languages: [
+    { name: "Français", level: "Natif" },
+    { name: "Anglais", level: "Bilingue" },
+  ],
+  extras: [
+    { label: "Board Member", company: "Adelit" },
+    { label: "Parcours international", company: "France, USA, Vietnam, Canada, Inde" },
+  ],
+  highlights: [
+    "Expert refactoring à grande échelle (Coinhouse, Naboo)",
+    "Founder startup climat Ecoly — app mobile, infra AWS",
+    "5 recommandations LinkedIn — julestranchier.com",
+  ],
+};
 
 export const contactLinks: ContactLink[] = [
   {
