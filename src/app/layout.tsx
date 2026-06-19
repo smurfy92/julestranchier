@@ -13,7 +13,10 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://julestranchier.com";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Jules Tranchier | AI-augmented Full-Stack Engineer",
   description:
     "Développeur Full-Stack freelance basé à Paris. +7 ans d'expérience en React, Node.js, GraphQL, TypeScript. Diplômé de l'École 42.",
@@ -21,8 +24,25 @@ export const metadata: Metadata = {
     title: "Jules Tranchier | AI-augmented Full-Stack Engineer",
     description:
       "Développeur Full-Stack freelance basé à Paris. +7 ans d'expérience en React, Node.js, GraphQL, TypeScript.",
+    url: siteUrl,
+    siteName: "Jules Tranchier",
     locale: "fr_FR",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Jules Tranchier — AI-augmented Full-Stack Engineer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jules Tranchier | AI-augmented Full-Stack Engineer",
+    description:
+      "Développeur Full-Stack freelance basé à Paris. +7 ans d'expérience en React, Node.js, GraphQL, TypeScript.",
+    images: ["/opengraph-image"],
   },
   robots: {
     index: true,
