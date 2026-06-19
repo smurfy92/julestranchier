@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# julestranchier.com
 
-## Getting Started
+Portfolio personnel de Jules Tranchier — AI-augmented Full-Stack Engineer freelance basé à Paris.
 
-First, run the development server:
+Site vitrine présentant le parcours, les compétences, les projets, les expériences et un CV imprimable.
+
+## Stack
+
+- **Framework** : [Next.js 16](https://nextjs.org) (App Router, React 19)
+- **Styles** : [Tailwind CSS v4](https://tailwindcss.com)
+- **Animations** : [Framer Motion](https://www.framer.com/motion/)
+- **Icônes** : [Heroicons](https://heroicons.com)
+- **Tests** : [Vitest](https://vitest.dev)
+- **Déploiement** : [Vercel](https://vercel.com)
+
+## Démarrage
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrir [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Commande         | Description                                  |
+| ---------------- | -------------------------------------------- |
+| `npm run dev`    | Serveur de développement                     |
+| `npm run build`  | Build de production                          |
+| `npm run start`  | Démarre le serveur de production (post-build) |
+| `npm run lint`   | Lint ESLint                                  |
+| `npm test`       | Lance la suite de tests Vitest               |
 
-## Learn More
+## Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/              # Routes App Router (page, cv, layout, sitemap, robots, OG image)
+├── components/       # Composants UI, sections, layout, cv
+├── data/             # Contenu du portfolio (content.ts)
+├── hooks/            # Hooks React (useScrollSpy)
+├── lib/              # Utilitaires (cn)
+└── types/            # Types partagés
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## SEO & sécurité
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Métadonnées Open Graph / Twitter et image OG générée dynamiquement (`src/app/opengraph-image.tsx`)
+- `sitemap.xml` et `robots.txt` générés (`src/app/sitemap.ts`, `src/app/robots.ts`)
+- En-têtes de sécurité (HSTS, CSP, X-Frame-Options, etc.) configurés dans `next.config.ts`
 
-## Deploy on Vercel
+## Déploiement
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Déployé automatiquement sur Vercel à chaque push sur la branche par défaut.
