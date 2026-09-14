@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { contactLinks } from "@/data/content";
 
 export function Footer() {
@@ -6,6 +7,13 @@ export function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 md:flex-row">
         <p className="text-sm text-muted-foreground">
           &copy; {new Date().getFullYear()} Jules Tranchier. Tous droits réservés.
+          {" · "}
+          <Link
+            href="/mentions-legales"
+            className="transition-colors hover:text-foreground"
+          >
+            Mentions légales
+          </Link>
         </p>
         <div className="flex items-center gap-6">
           {contactLinks.map((link) => (
