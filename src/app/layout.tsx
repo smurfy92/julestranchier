@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
+import { contactLinks, hero } from "@/data/content";
 import "./globals.css";
 
 const inter = Inter({
@@ -15,8 +16,28 @@ const spaceGrotesk = Space_Grotesk({
 
 const siteUrl = "https://julestranchier.com";
 
+// Données structurées schema.org, dérivées du contenu existant du site.
+const emailLink = contactLinks.find((link) => link.url.startsWith("mailto:"));
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: hero.name,
+  url: siteUrl,
+  jobTitle: hero.title,
+  ...(emailLink ? { email: emailLink.url.replace("mailto:", "") } : {}),
+  sameAs: contactLinks
+    .filter((link) => link.icon === "linkedin" || link.icon === "github")
+    .map((link) => link.url),
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  // "./" est résolu par Next relativement à la route courante : chaque page
+  // obtient son propre canonical (/, /cv, /mentions-legales) sans le redéclarer.
+  alternates: {
+    canonical: "./",
+  },
   title: "Jules Tranchier | AI-augmented Full-Stack Engineer",
   description:
     "Développeur Full-Stack freelance basé à Paris. +7 ans d'expérience en React, Node.js, GraphQL, TypeScript. Diplômé de l'École 42.",
@@ -62,6 +83,12 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
