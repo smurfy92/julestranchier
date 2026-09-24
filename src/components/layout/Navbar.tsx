@@ -9,6 +9,10 @@ import { cn } from "@/lib/utils";
 
 const sectionIds = navigation.map((item) => item.href.replace("#", ""));
 
+function prefersReducedMotion() {
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
+
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -33,7 +37,12 @@ export function Navbar() {
         <a
           href="#"
           className="font-heading text-xl font-bold text-foreground"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          onClick={() =>
+            window.scrollTo({
+              top: 0,
+              behavior: prefersReducedMotion() ? "auto" : "smooth",
+            })
+          }
         >
           JT
         </a>
@@ -61,14 +70,17 @@ export function Navbar() {
         <div className="flex items-center gap-2 md:hidden">
           <ThemeToggle />
           <button
+            type="button"
             onClick={() => setMobileOpen(!mobileOpen)}
             className="rounded-lg p-2 text-foreground"
             aria-label="Menu"
+            aria-expanded={mobileOpen}
+            aria-controls={mobileOpen ? "mobile-menu" : undefined}
           >
             {mobileOpen ? (
-              <XMarkIcon className="h-6 w-6" />
+              <XMarkIcon aria-hidden="true" className="h-6 w-6" />
             ) : (
-              <Bars3Icon className="h-6 w-6" />
+              <Bars3Icon aria-hidden="true" className="h-6 w-6" />
             )}
           </button>
         </div>
@@ -76,7 +88,10 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="border-t border-border bg-background/95 backdrop-blur-lg md:hidden">
+        <div
+          id="mobile-menu"
+          className="border-t border-border bg-background/95 backdrop-blur-lg md:hidden"
+        >
           <div className="flex flex-col gap-1 px-6 py-4">
             {navigation.map((item) => (
               <a

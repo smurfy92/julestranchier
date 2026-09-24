@@ -19,6 +19,7 @@ export function Testimonials() {
             className="break-inside-avoid rounded-2xl border border-border bg-card p-8"
           >
             <svg
+              aria-hidden="true"
               className="mb-4 h-8 w-8 text-accent/30"
               fill="currentColor"
               viewBox="0 0 24 24"

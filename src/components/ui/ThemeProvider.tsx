@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useContext, useEffect, useSyncExternalStore } from "react";
+import { MotionConfig } from "framer-motion";
 
 type Theme = "light" | "dark";
 
@@ -37,12 +38,35 @@ function setTheme(next: Theme) {
   listeners.forEach((l) => l());
 }
 
+function isTheme(value: unknown): value is Theme {
+  return value === "light" || value === "dark";
+}
+
+// localStorage peut lever (navigation privée stricte, stockage bloqué) :
+// on retombe alors sur la préférence système, sans casser le module.
+function readStoredTheme(): Theme | null {
+  try {
+    const stored = window.localStorage.getItem("theme");
+    return isTheme(stored) ? stored : null;
+  } catch {
+    return null;
+  }
+}
+
+function writeStoredTheme(theme: Theme) {
+  try {
+    window.localStorage.setItem("theme", theme);
+  } catch {
+    // Stockage indisponible : le thème reste valable pour la session en cours.
+  }
+}
+
 // Initialize from localStorage on module load (client only)
 if (typeof window !== "undefined") {
-  const stored = localStorage.getItem("theme") as Theme | null;
+  const stored = readStoredTheme();
   if (stored) {
     currentTheme = stored;
-  } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+  } else if (window.matchMedia?.("(prefers-color-scheme: dark)").matches) {
     currentTheme = "dark";
   }
 }
@@ -52,7 +76,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", theme === "dark");
-    localStorage.setItem("theme", theme);
+    writeStoredTheme(theme);
   }, [theme]);
 
   const toggleTheme = () => {
@@ -61,7 +85,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {children}
+      {/* reducedMotion="user" : Framer Motion coupe les animations de
+          transformation quand l'OS demande moins de mouvement. */}
+      <MotionConfig reducedMotion="user">{children}</MotionConfig>
     </ThemeContext.Provider>
   );
 }

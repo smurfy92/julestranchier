@@ -13,9 +13,9 @@ export function ThemeToggle() {
       aria-label={theme === "light" ? "Activer le mode sombre" : "Activer le mode clair"}
     >
       {theme === "light" ? (
-        <MoonIcon className="h-5 w-5" />
+        <MoonIcon aria-hidden="true" className="h-5 w-5" />
       ) : (
-        <SunIcon className="h-5 w-5" />
+        <SunIcon aria-hidden="true" className="h-5 w-5" />
       )}
     </button>
   );

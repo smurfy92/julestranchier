@@ -30,7 +30,7 @@ export function Contact() {
             href="mailto:tranchierjules@gmail.com"
             size="lg"
           >
-            <EnvelopeIcon className="mr-2 h-5 w-5" />
+            <EnvelopeIcon aria-hidden="true" className="mr-2 h-5 w-5" />
             Envoyer un email
           </Button>
           <Button
@@ -38,7 +38,7 @@ export function Contact() {
             variant="secondary"
             size="lg"
           >
-            <CalendarDaysIcon className="mr-2 h-5 w-5" />
+            <CalendarDaysIcon aria-hidden="true" className="mr-2 h-5 w-5" />
             Réserver un appel
           </Button>
         </div>
@@ -53,7 +53,7 @@ export function Contact() {
               className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
             >
               {link.label}
-              <ArrowTopRightOnSquareIcon className="h-4 w-4" />
+              <ArrowTopRightOnSquareIcon aria-hidden="true" className="h-4 w-4" />
             </a>
           ))}
         </div>

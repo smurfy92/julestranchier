@@ -63,7 +63,7 @@ export function Projects() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline"
                 >
-                  Voir le projet <ArrowTopRightOnSquareIcon className="h-4 w-4" />
+                  Voir le projet <ArrowTopRightOnSquareIcon aria-hidden="true" className="h-4 w-4" />
                 </a>
               )}
               {project.githubUrl && (
@@ -73,7 +73,7 @@ export function Projects() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground"
                 >
-                  GitHub <ArrowTopRightOnSquareIcon className="h-4 w-4" />
+                  GitHub <ArrowTopRightOnSquareIcon aria-hidden="true" className="h-4 w-4" />
                 </a>
               )}
             </div>
