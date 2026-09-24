@@ -49,6 +49,31 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Anneau de focus clavier, aux couleurs du site. Dans @layer base pour que
+   les utilitaires Tailwind (ex. focus-visible:outline-white) puissent le
+   surcharger. */
+@layer base {
+  :where(a, button, [tabindex]):focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 ::selection {
   background-color: var(--accent);
   color: white;

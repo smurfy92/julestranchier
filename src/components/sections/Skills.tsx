@@ -11,10 +11,10 @@ import {
 } from "@heroicons/react/24/outline";
 
 const iconMap: Record<string, React.ReactNode> = {
-  window: <ComputerDesktopIcon className="h-6 w-6" />,
-  server: <ServerIcon className="h-6 w-6" />,
-  phone: <DevicePhoneMobileIcon className="h-6 w-6" />,
-  tools: <WrenchScrewdriverIcon className="h-6 w-6" />,
+  window: <ComputerDesktopIcon aria-hidden="true" className="h-6 w-6" />,
+  server: <ServerIcon aria-hidden="true" className="h-6 w-6" />,
+  phone: <DevicePhoneMobileIcon aria-hidden="true" className="h-6 w-6" />,
+  tools: <WrenchScrewdriverIcon aria-hidden="true" className="h-6 w-6" />,
 };
 
 export function Skills() {

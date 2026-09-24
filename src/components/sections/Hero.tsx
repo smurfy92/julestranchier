@@ -94,8 +94,15 @@ export function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
       >
-        <a href="#about" className="text-muted-foreground">
-          <ChevronDownIcon className="h-6 w-6 animate-bounce" />
+        <a
+          href="#about"
+          className="text-muted-foreground"
+          aria-label="Défiler vers la section À propos"
+        >
+          <ChevronDownIcon
+            aria-hidden="true"
+            className="h-6 w-6 animate-bounce motion-reduce:animate-none"
+          />
         </a>
       </motion.div>
     </section>
