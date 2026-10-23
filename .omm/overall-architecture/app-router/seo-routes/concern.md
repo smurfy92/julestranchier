@@ -1,0 +1,1 @@
+Le sitemap liste /cv et /mentions-legales alors que ces deux pages déclarent robots noindex : signal contradictoire pour les moteurs. lastModified vaut new Date() et change donc à chaque build même sans modification de contenu.

@@ -1,0 +1,4 @@
+- L'URL du site "https://julestranchier.com" est dupliquée en dur dans layout.tsx, sitemap.ts, robots.ts et CVHeader.tsx.
+- L'e-mail et le lien Calendly sont codés en dur dans Contact.tsx, CVHeader.tsx et la page mentions légales au lieu de passer par contactLinks.
+- Presque toutes les sections sont "use client" alors que leur contenu est statique : seule l'enveloppe animée (SectionWrapper) et Hero en ont besoin.
+- La CSP autorise des domaines Vercel Analytics non utilisés (voir security-headers).

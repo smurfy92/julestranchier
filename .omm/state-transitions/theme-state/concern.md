@@ -1,0 +1,1 @@
+Écart serveur/client : le HTML arrive en clair puis passe en sombre à l'hydratation (flash visible). Un script inline bloquant dans le head, autorisé par la CSP actuelle ('unsafe-inline'), réglerait le problème.

@@ -1,0 +1,1 @@
+Pas de script inline avant hydratation : le serveur rend toujours le thème clair et la classe "dark" n'est posée qu'après montage, d'où un flash clair possible pour les visiteurs en mode sombre. Par ailleurs l'effet écrit dans localStorage dès le premier rendu, ce qui fige la préférence système du moment comme choix explicite.

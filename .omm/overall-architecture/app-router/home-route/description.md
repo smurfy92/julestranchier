@@ -1,0 +1,1 @@
+src/app/page.tsx : page one-page qui empile TopBanner, Navbar, puis les sections Hero, About, Skills, Experience, Projects, Testimonials, Contact et le Footer. Server Component pur, sans logique : toute l'interactivité est dans les sections clientes.

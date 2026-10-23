@@ -1,0 +1,1 @@
+Liens de la Navbar (desktop et menu mobile) générés depuis navigation. Le clic fait défiler en douceur sauf si prefers-reduced-motion est actif ; le lien actif est souligné selon activeId renvoyé par useScrollSpy (src/hooks/useScrollSpy.ts, rootMargin -50% pour détecter la section au milieu de l'écran).

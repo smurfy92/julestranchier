@@ -1,0 +1,1 @@
+src/components/layout/Navbar.tsx : useState scrolled (fond opaque après défilement, via écouteur scroll) et mobileOpen (menu burger ouvert/fermé, refermé au clic sur un lien). Le défilement vers une ancre est instantané si prefers-reduced-motion est actif.

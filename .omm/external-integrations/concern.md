@@ -1,0 +1,1 @@
+La CSP prévoit Vercel Analytics et Speed Insights sans qu'ils soient intégrés : soit les retirer de la CSP, soit, s'ils sont activés un jour, mettre à jour la mention "aucun traceur" des mentions légales.

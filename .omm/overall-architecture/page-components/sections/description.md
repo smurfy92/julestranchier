@@ -1,0 +1,1 @@
+src/components/sections/ : Hero (animations Framer Motion, CTA, lien /cv), About, Skills, Experience (logos via next/image), Projects, Testimonials, Contact (mailto + Calendly). Chaque section est "use client" et s'insère dans SectionWrapper avec un id servant d'ancre de navigation.

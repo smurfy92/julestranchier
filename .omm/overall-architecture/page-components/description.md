@@ -1,0 +1,1 @@
+Composants métier qui composent les pages : sections de l'accueil (src/components/sections/), habillage commun (src/components/layout/) et blocs du CV (src/components/cv/). Tous lisent leurs données dans src/data/content.ts.

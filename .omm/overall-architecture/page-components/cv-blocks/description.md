@@ -1,0 +1,1 @@
+src/components/cv/ : CVHeader (identité, liens de contact en dur, PrintButton), CVExperience (liste des expériences), CVSidebar (compétences, formations, langues depuis cv et skillCategories), PrintButton (client, appelle window.print()).

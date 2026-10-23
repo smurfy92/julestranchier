@@ -1,0 +1,1 @@
+src/hooks/useScrollSpy.ts : un IntersectionObserver (rootMargin -50% en haut et en bas) observe les éléments dont l'id figure dans sectionIds ; chaque section qui croise la ligne médiane de l'écran devient activeId. sectionIds est calculé une fois au niveau module dans Navbar.tsx, ce qui garde la dépendance de l'effet stable.

@@ -1,0 +1,1 @@
+/cv : version imprimable du parcours, bouton d'impression (window.print) et liens de contact. Pensée pour l'export PDF via la boîte d'impression du navigateur ; styles dédiés dans le bloc @media print de globals.css.

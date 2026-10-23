@@ -1,0 +1,1 @@
+src/app/layout.tsx : charge Inter et Space Grotesk via next/font/google, déclare les métadonnées (canonical relatif "./", Open Graph, Twitter, robots), injecte un JSON-LD schema.org Person dérivé de hero et contactLinks (échappement de "<"), et enveloppe l'application dans ThemeProvider. html lang="fr" avec suppressHydrationWarning.

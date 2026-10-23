@@ -1,0 +1,1 @@
+Routes de métadonnées générées par Next : sitemap.ts (/, /cv, /mentions-legales, lastModified = date du build), robots.ts (tout autorisé, pointe vers le sitemap) et opengraph-image.tsx (image 1200x630 rendue par next/og ImageResponse).

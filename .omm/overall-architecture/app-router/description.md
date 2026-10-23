@@ -1,0 +1,1 @@
+Routes Next.js App Router dans src/app/ : layout racine (polices, métadonnées, JSON-LD Person, ThemeProvider), page d'accueil one-page, /cv, /mentions-legales et routes de métadonnées générées (sitemap.ts, robots.ts, opengraph-image.tsx).

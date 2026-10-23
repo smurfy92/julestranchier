@@ -1,0 +1,1 @@
+Rendu au build par Next.js des trois pages : les Server Components (pages, CV, Footer, TopBanner) et le rendu serveur initial des Client Components produisent du HTML statique ; les sections clientes s'hydratent ensuite pour les animations Framer Motion. Images de logos optimisées par next/image.

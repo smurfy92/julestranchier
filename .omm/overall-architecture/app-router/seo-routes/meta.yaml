@@ -1,0 +1,9 @@
+created: 2026-10-23T09:58:53.922Z
+updated: 2026-10-23T09:58:54.268Z
+update_count: 2
+last_field: concern
+kind: nested-class
+title: seo-routes
+children: []
+parentPath:
+  - app-router

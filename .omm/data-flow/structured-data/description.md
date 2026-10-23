@@ -1,0 +1,1 @@
+Métadonnées dérivées : JSON-LD Person (nom, poste, e-mail extrait du lien mailto, sameAs LinkedIn et GitHub) injecté dans le body du layout avec échappement de "<", plus balises Open Graph, Twitter et canonical. Les textes de titre et description sont en dur dans layout.tsx et non dérivés de content.ts.

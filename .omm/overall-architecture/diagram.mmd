@@ -1,0 +1,20 @@
+graph LR
+    app-router["App Router\nsrc/app/"]
+    page-components["Composants de page\nsrc/components/{sections,layout,cv}/"]
+    ui-kit["Kit UI\nsrc/components/ui/"]
+    content-store["Contenu statique\nsrc/data/content.ts"]
+    theme-system["Système de thème\nsrc/components/ui/ThemeProvider.tsx"]
+    security-headers["En-têtes de sécurité\nnext.config.ts"]
+    ci-pipeline["CI GitHub Actions\n.github/workflows/ci.yml"]
+    app-router -->|"compose les pages"| page-components
+    app-router -->|"enveloppe l'arbre React"| theme-system
+    app-router -->|"lit hero et contactLinks pour le JSON-LD"| content-store
+    page-components -->|"importe les données affichées"| content-store
+    page-components -->|"réutilise boutons, titres, wrappers animés"| ui-kit
+    ui-kit -->|"ThemeToggle lit et bascule le thème"| theme-system
+    security-headers -->|"appliqués à toutes les routes"| app-router
+    ci-pipeline -->|"lint, typecheck, tests, build"| app-router
+    classDef entry fill:#89b4fa,stroke:#89b4fa,color:#1e1e2e
+    classDef store fill:#a6e3a1,stroke:#a6e3a1,color:#1e1e2e
+    class app-router entry
+    class content-store store

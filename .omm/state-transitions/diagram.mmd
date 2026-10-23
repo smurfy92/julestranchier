@@ -1,0 +1,8 @@
+graph LR
+    theme-state["État du thème\nsrc/components/ui/ThemeProvider.tsx"]
+    navbar-state["État de la Navbar\nsrc/components/layout/Navbar.tsx"]
+    scroll-spy["Section active\nsrc/hooks/useScrollSpy.ts"]
+    navbar-state -->|"héberge ThemeToggle qui bascule clair/sombre"| theme-state
+    scroll-spy -->|"fournit activeId pour souligner le lien"| navbar-state
+    classDef store fill:#a6e3a1,stroke:#a6e3a1,color:#1e1e2e
+    class theme-state store

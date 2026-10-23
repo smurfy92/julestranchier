@@ -1,0 +1,1 @@
+.github/workflows/ci.yml : sur pull request et push sur main, Node 22, npm ci puis lint ESLint, typecheck tsc --noEmit, tests Vitest et next build (télémétrie désactivée). Permissions contents: read, concurrence annulant les runs obsolètes, timeout 10 minutes. Le déploiement lui-même est fait par l'intégration Git de Vercel, hors de ce workflow.

@@ -1,0 +1,9 @@
+created: 2026-10-23T09:59:25.925Z
+updated: 2026-10-23T09:59:26.181Z
+update_count: 2
+last_field: concern
+kind: nested-class
+title: sections
+children: []
+parentPath:
+  - page-components

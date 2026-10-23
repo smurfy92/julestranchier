@@ -1,0 +1,9 @@
+created: 2026-10-23T09:58:53.306Z
+updated: 2026-10-23T09:58:53.562Z
+update_count: 2
+last_field: constraint
+kind: nested-class
+title: legal-route
+children: []
+parentPath:
+  - app-router

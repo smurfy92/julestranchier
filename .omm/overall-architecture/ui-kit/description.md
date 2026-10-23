@@ -1,0 +1,1 @@
+src/components/ui/ : primitives partagées. Button (lien stylé, variantes et tailles), SectionHeading (titre + sous-titre), SectionWrapper (client, apparition animée via useInView de Framer Motion), ThemeToggle (bouton soleil/lune), et ThemeProvider (détaillé dans theme-system). Utilise cn() de src/lib/utils.ts (clsx + tailwind-merge).

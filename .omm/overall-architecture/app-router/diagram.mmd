@@ -1,0 +1,12 @@
+graph LR
+    root-layout["Layout racine\nsrc/app/layout.tsx"]
+    home-route["Accueil\nsrc/app/page.tsx"]
+    cv-route["CV imprimable\nsrc/app/cv/page.tsx"]
+    legal-route["Mentions légales\nsrc/app/mentions-legales/page.tsx"]
+    seo-routes["Routes SEO\nsrc/app/{sitemap,robots,opengraph-image}"]
+    root-layout -->|"enveloppe"| home-route
+    root-layout -->|"enveloppe"| cv-route
+    root-layout -->|"enveloppe"| legal-route
+    root-layout -->|"metadataBase et image OG référencée"| seo-routes
+    classDef entry fill:#89b4fa,stroke:#89b4fa,color:#1e1e2e
+    class root-layout entry

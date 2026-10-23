@@ -1,0 +1,11 @@
+created: 2026-10-23T09:59:51.691Z
+updated: 2026-10-23T10:00:12.793Z
+update_count: 4
+last_field: diagram
+git_commit: 401d72f
+git_branch: main
+children:
+  - cv-page
+  - home-page
+  - legal-page
+  - seo-endpoints

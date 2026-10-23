@@ -1,0 +1,5 @@
+graph LR
+    navbar-anchors["Ancres de la Navbar\nsrc/components/layout/Navbar.tsx"]
+    section-targets["Cibles de section\nsrc/components/sections/"]
+    navbar-anchors -->|"défilement vers l'id de section"| section-targets
+    section-targets -->|"l'observateur de visibilité met à jour la section active"| navbar-anchors

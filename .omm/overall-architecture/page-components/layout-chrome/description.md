@@ -1,0 +1,1 @@
+src/components/layout/ : TopBanner (bandeau de liens de contact), Navbar (client : scroll-spy, menu mobile, ThemeToggle, défilement respectant prefers-reduced-motion) et Footer (liens sociaux, lien mentions légales).

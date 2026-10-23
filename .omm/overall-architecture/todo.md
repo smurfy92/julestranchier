@@ -1,0 +1,2 @@
+- Centraliser siteUrl, e-mail et lien Calendly dans src/data/content.ts.
+- Évaluer le passage des sections statiques en Server Components, en gardant SectionWrapper comme îlot client.

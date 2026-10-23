@@ -1,0 +1,14 @@
+graph LR
+    site["Site julestranchier.com\nsrc/"]
+    vercel-hosting["Vercel\nhébergement et déploiement"]
+    google-fonts["Google Fonts via next/font\nsrc/app/layout.tsx"]
+    calendly["Calendly\nprise de rendez-vous"]
+    social-profiles["LinkedIn et GitHub\nliens sortants"]
+    vercel-hosting -->|"build et sert le site à chaque push sur main"| site
+    google-fonts -->|"Inter et Space Grotesk auto-hébergées au build"| site
+    site -->|"lien sortant depuis Contact et CVHeader"| calendly
+    site -->|"liens sortants et sameAs du JSON-LD"| social-profiles
+    classDef external fill:#585b70,stroke:#585b70,color:#cdd6f4
+    classDef entry fill:#89b4fa,stroke:#89b4fa,color:#1e1e2e
+    class vercel-hosting,google-fonts,calendly,social-profiles external
+    class site entry

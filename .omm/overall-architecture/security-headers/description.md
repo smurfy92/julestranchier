@@ -1,0 +1,1 @@
+next.config.ts : en-têtes HTTP appliqués à toutes les routes (/:path*) : HSTS avec preload, X-Frame-Options DENY, nosniff, Referrer-Policy, Permissions-Policy (caméra, micro, géolocalisation coupés) et une Content-Security-Policy. unsafe-eval n'est ajouté qu'en développement.

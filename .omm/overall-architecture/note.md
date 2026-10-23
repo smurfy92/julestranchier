@@ -1,0 +1,1 @@
+Tests Vitest : environnement node par défaut, les tests de composants déclarent jsdom en en-tête. Couverture actuelle : utils.test.ts, ThemeProvider.test.tsx, a11y.test.tsx (rendu des sections et attributs d'accessibilité).

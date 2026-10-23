@@ -1,0 +1,11 @@
+created: 2026-10-23T10:00:43.769Z
+updated: 2026-10-23T10:00:44.407Z
+update_count: 3
+last_field: constraint
+git_commit: 401d72f
+git_branch: main
+children:
+  - content-source
+  - static-render
+  - structured-data
+  - type-contracts

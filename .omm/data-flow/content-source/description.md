@@ -1,0 +1,1 @@
+src/data/content.ts : neuf exports (navigation, hero, about, skillCategories, experiences, projects, testimonials, cv, contactLinks). Les chemins d'images pointent vers public/images/companies/ et public/images/projects/.

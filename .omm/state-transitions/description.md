@@ -1,0 +1,1 @@
+Les seuls états côté client : le thème clair/sombre (persistant), l'état local de la Navbar (scrolled, mobileOpen) et la section active issue du scroll-spy. Pas de store global ni de bibliothèque d'état.

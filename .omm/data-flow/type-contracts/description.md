@@ -1,0 +1,1 @@
+src/types/index.ts (environ 90 lignes) : interfaces NavItem, HeroData, AboutData, SkillCategory, Experience, Project, Testimonial, CVData, ContactLink. Garantissent au typecheck que le contenu respecte la forme attendue par les composants.

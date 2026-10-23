@@ -1,0 +1,6 @@
+graph LR
+    layout-chrome["Habillage\nsrc/components/layout/"]
+    sections["Sections de l'accueil\nsrc/components/sections/"]
+    cv-blocks["Blocs du CV\nsrc/components/cv/"]
+    layout-chrome -->|"liens d'ancre de la Navbar vers les id de section"| sections
+    cv-blocks -->|"réutilise experiences et skillCategories comme les sections"| sections

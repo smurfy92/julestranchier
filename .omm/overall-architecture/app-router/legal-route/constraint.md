@@ -1,0 +1,1 @@
+Engagement écrit : aucun cookie, aucun traceur, aucune donnée collectée, thème stocké uniquement en local. Toute évolution du site qui contredit ces phrases doit modifier cette page dans le même changement.
