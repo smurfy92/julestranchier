@@ -1,0 +1,12 @@
+graph LR
+    home-page["Accueil one-page\n/ (src/app/page.tsx)"]
+    cv-page["CV imprimable\n/cv"]
+    legal-page["Mentions légales\n/mentions-legales"]
+    seo-endpoints["Endpoints SEO\n/sitemap.xml /robots.txt /opengraph-image"]
+    home-page -->|"bouton Voir mon CV du Hero"| cv-page
+    home-page -->|"lien du Footer"| legal-page
+    cv-page -->|"lien retour"| home-page
+    legal-page -->|"lien Retour au portfolio"| home-page
+    seo-endpoints -->|"référence les trois URL"| home-page
+    classDef entry fill:#89b4fa,stroke:#89b4fa,color:#1e1e2e
+    class home-page entry

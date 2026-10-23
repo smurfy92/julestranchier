@@ -1,0 +1,1 @@
+La CSP autorise va.vercel-scripts.com et vitals.vercel-insights.com (Vercel Analytics / Speed Insights) alors qu'aucun paquet @vercel/analytics n'est installé : autorisation morte à retirer, ou à assumer et alors à déclarer dans les mentions légales. script-src garde 'unsafe-inline' en production, ce qui affaiblit la CSP (pas de nonce).

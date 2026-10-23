@@ -1,0 +1,1 @@
+Portfolio de freelance destiné aux recruteurs et clients. Hébergé sur Vercel, déploiement automatique à chaque push sur main. Le dépôt contient AGENTS.md qui prévient que cette version de Next.js diffère des connaissances habituelles : lire node_modules/next/dist/docs/ avant de coder.

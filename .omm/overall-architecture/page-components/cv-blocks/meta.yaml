@@ -1,0 +1,9 @@
+created: 2026-10-23T09:59:26.421Z
+updated: 2026-10-23T09:59:26.421Z
+update_count: 1
+last_field: description
+kind: nested-class
+title: cv-blocks
+children: []
+parentPath:
+  - page-components

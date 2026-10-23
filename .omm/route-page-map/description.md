@@ -1,0 +1,1 @@
+Carte des pages et de la navigation. Le site est essentiellement une page unique à ancres ; deux pages secondaires (CV, mentions légales) et trois endpoints générés pour le référencement. Aucune route dynamique, aucune route API, aucun middleware.

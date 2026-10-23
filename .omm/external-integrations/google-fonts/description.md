@@ -1,0 +1,1 @@
+Polices Inter et Space Grotesk chargées par next/font/google : téléchargées au build et servies depuis le domaine du site, ce qui reste compatible avec font-src 'self' et n'expose pas les visiteurs à Google.

@@ -1,0 +1,1 @@
+Pas de cookie, pas de traceur, pas de formulaire : engagement public pris dans les mentions légales. Toute intégration future qui collecte des données (analytics, formulaire de contact) impose de mettre à jour cette page. Alias d'import "@/" vers src/, partagé par tsconfig et vitest.config.mts.

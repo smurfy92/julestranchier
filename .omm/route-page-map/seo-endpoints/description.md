@@ -1,0 +1,1 @@
+Endpoints produits par les conventions de fichiers Next : /sitemap.xml (sitemap.ts), /robots.txt (robots.ts) et /opengraph-image (opengraph-image.tsx), cette dernière référencée par les métadonnées Open Graph et Twitter du layout.

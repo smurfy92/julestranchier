@@ -1,0 +1,1 @@
+La directive "use client" sur des sections purement présentationnelles (About, Skills, Testimonials, Experience, Projects) envoie leur code au navigateur sans nécessité ; seul SectionWrapper et Hero utilisent réellement Framer Motion. Les projets n'ont actuellement ni liveUrl ni githubUrl (le test a11y les simule).

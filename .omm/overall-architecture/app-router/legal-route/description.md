@@ -1,0 +1,1 @@
+src/app/mentions-legales/page.tsx : mentions légales (éditeur, hébergeur Vercel, propriété intellectuelle, données personnelles). Texte entièrement en dur dans le JSX, réutilise SectionWrapper et SectionHeading. noindex/follow.

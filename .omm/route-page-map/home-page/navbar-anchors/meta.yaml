@@ -1,0 +1,9 @@
+created: 2026-10-23T09:59:53.042Z
+updated: 2026-10-23T09:59:53.042Z
+update_count: 1
+last_field: description
+kind: nested-class
+title: navbar-anchors
+children: []
+parentPath:
+  - home-page

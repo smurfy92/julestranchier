@@ -1,0 +1,11 @@
+graph LR
+    content-source["Source de contenu\nsrc/data/content.ts"]
+    type-contracts["Contrats de types\nsrc/types/index.ts"]
+    static-render["Rendu statique au build\nsrc/app/ + src/components/"]
+    structured-data["Données structurées et SEO\nsrc/app/layout.tsx"]
+    type-contracts -->|"type chaque export"| content-source
+    content-source -->|"import direct dans les composants"| static-render
+    content-source -->|"hero et contactLinks dérivés en JSON-LD Person"| structured-data
+    static-render -->|"HTML pré-rendu servi par Vercel"| structured-data
+    classDef store fill:#a6e3a1,stroke:#a6e3a1,color:#1e1e2e
+    class content-source store

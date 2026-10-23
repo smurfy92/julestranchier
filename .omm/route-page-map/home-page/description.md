@@ -1,0 +1,1 @@
+Page d'accueil à défilement : ancres #about, #skills, #experience, #projects, #testimonials, #contact définies dans navigation (content.ts). La Navbar suit la section visible par IntersectionObserver (useScrollSpy) ; le Hero renvoie vers #contact et #about.

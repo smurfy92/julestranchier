@@ -1,0 +1,1 @@
+Flux de données entièrement statique : le contenu part d'un module TypeScript, est importé par les composants, rendu en HTML au build et servi tel quel. Aucune requête réseau à l'exécution, aucune base, aucun CMS. La seule donnée écrite côté client est la préférence de thème dans localStorage (voir state-transitions).

@@ -1,0 +1,1 @@
+src/data/content.ts (environ 280 lignes) : source unique du contenu éditorial, typée par src/types/index.ts. Exporte navigation, hero, about, skillCategories, experiences (avec logos dans public/images/companies/), projects (illustrations SVG dans public/images/projects/), testimonials, cv et contactLinks. Modifier le site revient le plus souvent à éditer ce fichier.
